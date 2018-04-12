@@ -1,0 +1,21 @@
+
+
+<h2>Offer Slots</h2>
+<ul>
+  <li *ngFor="let offerSlot of offerSlots">
+<div>
+    <label>Slot:
+        <input [(ngModel)]="offerSlot.slotNumber" placeholder="slotNumber">
+       </label>
+      
+      
+       <label>Aprimo Offer Id:
+        <input [(ngModel)]="offerSlot.aprimoId" placeholder="aprimoId">
+       </label>
+      
+       <label>Control Content Id:
+        <input [(ngModel)]="offerSlot.controlcontentId" placeholder="controlcontentId">
+       </label>
+</div>
+</li>
+</ul>

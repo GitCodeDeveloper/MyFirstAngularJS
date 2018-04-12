@@ -1,0 +1,116 @@
+/* Validated by the W3C CSS Validation service. */
+
+body { background:white; color:#000000; font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:10pt; }
+
+.pageHeader {
+background-position:left;
+background-image:url('images/logo.png');   
+background-repeat:no-repeat;
+}
+
+.appText {
+position:relative;
+top:-1px;
+text-align:center;
+font-family:sans-serif; 
+color:white; 
+vertical-align:bottom; 
+font-size:large; 
+font-family:Georgia, serif;\
+z-index:-1;
+}
+
+.appNavMenu {
+position:relative;
+top:1px;
+text-align:center;
+font-family:sans-serif; 
+color:white; 
+font-size:x-large; 
+font-family:Georgia, serif;\
+z-index:-2;
+}
+
+.searchMenuText {
+position:relative;
+top:10px;
+left:70px;
+text-align:left;
+font-family:sans-serif;
+font-weight:bolder; 
+color:#003366; 
+vertical-align:bottom; 
+font-size:medium; 
+font-family:Georgia, serif;\
+z-index:2;
+}
+
+/**table { border-color:#FB8C04; font-size:10pt; }**/
+hr { background:#95B4EA; border:solid 1px #95B4EA; color:#95B4EA; }
+h1 { }
+input { }
+a { color:#387FD1; }
+
+.section-heading { color:#000000; font-weight:bold; font-size:14pt; }
+.question-heading { color:#0560A6; font-weight:bold; }
+.question-text { }
+.perseus-link { font-size: x-small; }
+.response-set { margin: 10pt 0pt 20pt 15pt; }
+.response-set table thead { color:#676360; }
+.odd-row { }
+.even-row { background:#E5EEFD; }
+.calculated-field { background: #FAFAFA; }
+
+.progress-table { border: solid 1px #769BC6; line-height:13px; width:175px; }
+.completed-cell { background:#8CB3F4; }
+.uncompleted-cell { background:#E8E8E8; }
+.progress-labels{ background-color: #F0F0F0; color: #BABABA; font: bold 9px Tahoma, sans-serif; width:175px; }
+.progress-labels td { border: solid 2px #D0D0D0; }
+.progress-text { font-size:.8em; margin-top:5px; }
+
+/* BOX DIMENSIONS */
+.smRow td { height: 4px; line-height: 4px; }
+.lgRow td { height: 16px; line-height: 16px; }
+.Gap { width: 4px; }
+
+/* BOX COLORS*/
+/* Fills are represented by two letter css classes */
+/* Borders are represented by three letter css classes */
+
+/* Color #1 */
+.C1 { }
+.C1a { background: #387FD1; width: 4px; }
+.C1b { background: #387FD1; width: 8px; }
+.C1c { background: #387FD1; width: 16px; }
+
+/* Color #2 */
+.C2 { }
+.C2a { background: #003366; width: 4px; }
+.C2b { background: #003366; width: 8px; }
+.C2c { background: #003366; width: 16px; }
+
+/* Color #3 */
+.C3 { }
+.C3a { background: #003366; width: 4px; }
+.C3b { background: #003366; width: 8px; }
+.C3c { background: #003366; width: 16px; }
+.C3d { background: #003366; }
+
+/* Live Results */
+.QuestionHeading { font-weight: bold; }
+.QuestionText { }
+.ReportElement { font-family: Arial, sans-serif; font-size: 12pt; padding: 15px 0px; width: 98%; }
+.ReportQuestion { font-family: arial, sans-serif; font-size: 12pt; }
+.ReportTable { border: solid 1px #C0C0C0; font-family: Arial, sans-serif; font-size: 10pt; }
+.ReportTable td { border: solid 1px #C0C0C0; }
+.ReportScale { background-color: #F0F0F0; border: solid 2px #D0D0D0; color: #BABABA; font: bold 9px Tahoma, sans-serif; }
+.ReportScale td { border: solid 2px #D0D0D0; }
+.ReportBar { border: solid 1px #C0C0C0; height: 18px; line-height: 18px; }
+.ReportBar td { border: solid 1px #C0C0C0; height: 18px; line-height: 18px; }
+.ReportItemRow { background-color: #FFFFFF; }
+.ReportAltItemRow { background-color: #F8F8F8; }
+.FreqBar { background:#8888FF; border:solid 1px #4B54C5 !important; }
+.ReportHeaderRow { background-color: #E1ECFF; color: #3C4184; font-size: 8pt; height: 24px; }
+.ReportFooterRow { background-color: #E1ECFF; color: #3C4184; font-size: 8pt; height: 24px; }
+.ReportTotal { font-size: 9pt; font-weight: bold; }
+.ReportRowLabel { color: #808080; }
