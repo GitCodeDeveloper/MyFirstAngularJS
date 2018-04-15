@@ -7,18 +7,23 @@ import { OfferSlotsManagementComponent } from './offer-slots-management/offer-sl
 
 //My addition
 import { FormsModule } from '@angular/forms';
+import { OfferSlotDetailsComponent } from './offer-slot-details/offer-slot-details.component';
+import { OfferSlotManagementService } from './offer-slot-management.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OfferSlotsManagementComponent
+    OfferSlotsManagementComponent,
+    OfferSlotDetailsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [OfferSlotManagementService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

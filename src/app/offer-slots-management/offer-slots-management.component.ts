@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OfferSlot} from '../offerslot';
 import { OfferSlots} from '../offerslot';
-import { OFFERSLOTS} from '../TestData/mockofferdata';
+import { OfferSlotManagementService } from '../offer-slot-management.service';
 
 @Component({
   selector: 'app-offer-slots-management',
@@ -10,16 +10,24 @@ import { OFFERSLOTS} from '../TestData/mockofferdata';
 })
 export class OfferSlotsManagementComponent implements OnInit {
 
- /* offerSlot:OfferSlot ={
-    slotNumber : 10,
-    aprimoId : 197714,
-    controlcontentId : 'CTRLCNT14001'
-  };*/
-  offerSlots = OFFERSLOTS;
+ 
+  offerSlots :OfferSlot[];
+  selectedOffer:OfferSlot;
 
-  constructor() { }
+  constructor(private offerManagementService:OfferSlotManagementService) { 
+
+  }
+
+  initCurrentOfferSlots():void {
+    this.offerManagementService.getCurrentOfferSlots().subscribe(offerSlots => this.offerSlots = offerSlots)
+  }
 
   ngOnInit() {
+    this.initCurrentOfferSlots();
+  }
+
+  onOfferSlect(selectedOffer:OfferSlot):void{
+    this.selectedOffer = selectedOffer;
   }
 
 }

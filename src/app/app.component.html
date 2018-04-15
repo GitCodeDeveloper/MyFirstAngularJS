@@ -17,6 +17,7 @@
     <li class='active has-sub'><a href='../#'><span  style="arrow-down">Work with Offers<b>&#9660;</b></span></a>
           <ul>
            <li class='has-sub'><a href="../getAprimoOffersSeach.htm"><span>Get Offers</span></a></li>
+           <li class='has-sub'><a href="../authenticatedAccessAngular.htm"><span>Offer Slot Management</span></a></li>
            <li class='has-sub'><a href="../offersReportSearch.htm"><span>Get Report</span></a></li>
            <li class='has-sub'><a href="../syncOffersSearch.htm"><span>Synchronize Offers</span></a></li>
            <li class='has-sub'><a href="../blackoutseach.htm"><span>Blackout Period</span></a></li>
@@ -60,4 +61,10 @@
  </td>
 </tr>
 </table>
-<app-offer-slots-management></app-offer-slots-management>
+<!-- 
+<nav>
+  <a routerLink="/offerslotdashboard">Heroes</a>
+</nav>-->
+<router-outlet></router-outlet>
+ <!--  
+<app-offer-slots-management></app-offer-slots-management>-->
