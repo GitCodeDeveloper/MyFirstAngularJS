@@ -12,4 +12,8 @@ export class OfferSlotManagementService {
   getCurrentOfferSlots():Observable<OfferSlot[]>{
     return of(OFFERSLOTS);
   }
+  getOfferSlot(slotNumber:Number):Observable<OfferSlot>{
+    return of(OFFERSLOTS.find(offerSl => offerSl.slotNumber === slotNumber));
+  }
+
 }

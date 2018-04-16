@@ -1,3 +1,4 @@
+<span>Offer Slot Details</span>
 <div *ngIf="offerSlot"> 
   <h2> offerSlot Slot {{ offerSlot.slotNumber}} Details Page</h2>
   
@@ -11,3 +12,4 @@
       <input [(ngModel)]="offerSlot.controlcontentId" placeholder="controlcontentId">
     </label>
   </div>
+  <button (click)="goBack()">go back</button>

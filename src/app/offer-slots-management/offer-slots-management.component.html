@@ -1,20 +1,13 @@
 <h2>Offer Slots</h2>
 <ul class="offerslots">
-  <li *ngFor="let offerSlot of offerSlots" [class.selected]="offerSlot === selectedOffer"  (click)="onOfferSlect(offerSlot)">
+  <li *ngFor="let offerSlot of offerSlots">
+    <a routerLink="/offerslotdetail/{{offerSlot.slotNumber}}">
     <div>
-        <label>Slot:
-            <input [(ngModel)]="offerSlot.slotNumber" placeholder="slotNumber">
-          </label>
-          
-          
-          <label>Aprimo Offer Id:
-            <input [(ngModel)]="offerSlot.aprimoId" placeholder="aprimoId">
-          </label>
-          
-          <label>Control Content Id:
-            <input [(ngModel)]="offerSlot.controlcontentId" placeholder="controlcontentId">
-          </label>
+        <H1>Slot:<span>{{offerSlot.slotNumber}}</span></H1>
+        <label>Aprimo Offer Id:<span>{{offerSlot.aprimoId}}</span></label>
+        <label>Control Content Id:<span>{{offerSlot.controlcontentId}}</span></label>
     </div>
+    </a>
   </li>
 </ul>
-<app-offer-slot-details [offerSlot]="selectedOffer" ></app-offer-slot-details>
+<!-- <app-offer-slot-details [offerSlot]="selectedOffer" ></app-offer-slot-details> -->
