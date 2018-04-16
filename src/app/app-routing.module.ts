@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 */
 
 const routes: Routes = [
-  //{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/authenticatedAccessAngular.htm', pathMatch: 'full' },
  // { path: 'dashboard', component: DashboardComponent },
   { path: 'offerslotdetail/:id', component: OfferSlotDetailsComponent },
   { path: 'authenticatedAccessAngular.htm', component: OfferSlotsManagementComponent }
